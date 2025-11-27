@@ -71,31 +71,39 @@
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-bold uppercase tracking-wider mb-6 border border-purple-200">
                 <i data-lucide="award" class="w-3 h-3"></i> NeurIPS 2025 Camera Ready
             </div>
-          
+           
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-8 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 pb-2">
                 The Best Instruction-Tuning Data <br class="hidden md:block" /> are Those That Fit
             </h1>
-          
-            <div class="flex flex-wrap justify-center gap-y-4 gap-x-8 mb-10 text-lg">
+           
+            <div class="flex flex-wrap justify-center gap-y-8 gap-x-12 mb-10 text-lg items-start">
                 
-                <div class="group relative">
-                    <div class="font-semibold text-slate-800 flex items-center gap-2 justify-center">
+                <!-- Author 1: Dylan Zhang (Updated) -->
+                <div class="group relative flex flex-col items-center">
+                    <a href="https://lemon-agreement-54e.notion.site/dylanzhang" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="font-semibold text-slate-800 flex items-center gap-2 justify-center hover:text-purple-600 transition-colors decoration-purple-200 underline-offset-4 hover:underline">
                         Dylan Zhang
-                        <a href="mailto:shizhuo2@illinois.edu" class="text-slate-400 hover:text-purple-600 transition-colors" title="shizhuo2@illinois.edu">
-                            <i data-lucide="mail" class="w-4 h-4"></i>
-                        </a>
-                    </div>
+                        <i data-lucide="link" class="w-3 h-3 text-slate-400"></i>
+                    </a>
                     <div class="text-sm text-slate-500">University of Illinois Urbana-Champaign</div>
+                    
+                    <!-- Added Contact Info -->
+                    <div class="mt-2 text-xs font-medium text-slate-600 bg-white/50 px-3 py-1 rounded-full border border-slate-200 backdrop-blur-sm">
+                        <span class="text-purple-700 font-bold">Point of Contact:</span> 
+                        <a href="mailto:shizhuo2@illinois.edu" class="hover:text-purple-600 hover:underline ml-1">shizhuo2@illinois.edu</a>
+                    </div>
                 </div>
 
-                <div class="group relative">
+                <div class="group relative flex flex-col items-center">
                     <div class="font-semibold text-slate-800 flex items-center gap-2 justify-center">
                         Qirun Dai
                     </div>
                     <div class="text-sm text-slate-500">University of Chicago</div>
                 </div>
 
-                <div class="group relative">
+                <div class="group relative flex flex-col items-center">
                     <div class="font-semibold text-slate-800 flex items-center gap-2 justify-center">
                         Hao Peng
                     </div>
@@ -219,7 +227,7 @@
                     </div>
                     <div class="mt-4 md:mt-0">
                        <span class="inline-flex items-center gap-1 text-purple-300 font-medium">
-                            See paper for full benchmarks <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                           See paper for full benchmarks <i data-lucide="chevron-right" class="w-4 h-4"></i>
                        </span>
                     </div>
                 </div>
@@ -285,7 +293,7 @@
 
         // 3. Handle Clipboard Logic
         function copyToClipboard() {
-            navigator.clipboard.writeText("Dylan Zhang: shizhuo2@illinois.edu")
+            navigator.clipboard.writeText("shizhuo2@illinois.edu")
                 .then(() => {
                     alert("Email copied to clipboard!");
                 })
